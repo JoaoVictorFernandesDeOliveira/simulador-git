@@ -44,18 +44,26 @@ Depois de clonar o projeto, o seu fluxo de trabalho diário (descrito abaixo) se
     * **Como criamos uma nova branch?** Usando o comando `git checkout -b <nome_da_sua_branch>`.
     * **Observação:** O nome da branch geralmente segue a convenção **`tipo/nome-da-tarefa`** para que todos na equipe entendam o objetivo da branch. Por exemplo: `feature/adiciona-login` ou `bugfix/corrige-erro-de-pagamento`.
 
+### Por que o arquivo `simulador_README.md` está na nova branch?
+
+Quando você criou sua branch `feature/cria-fluxo-de-trabalho`, o Git fez uma **cópia exata** de todos os arquivos que existiam na branch `master` no seu computador. Por isso, o `simulador_README.md` está presente lá. Sua nova branch é uma cópia perfeita do projeto até aquele momento, esta copia foi feita atraves do feature.
+
 ### Fluxo de Trabalho Diário (Atualizando o Projeto)
 
 Depois de configurar tudo, o fluxo para fazer uma nova alteração e enviá-la para o GitHub é o seguinte:
 
-1.  **Faça suas alterações:** Adicione, edite ou exclua arquivos na sua pasta de trabalho.
+1.  **Faça suas alterações:** Adicione, edite ou exclua arquivos na sua pasta de trabalho. **No nosso caso, você adicionou o conteúdo que criamos no arquivo `fluxo_README.md`**.
 
 2.  **`git add <nome_do_arquivo>` ou `git add .`**
-    * **O que é:** Adiciona as novas alterações à área de preparação. Use o nome do arquivo para selecionar um específico, ou use `.` para adicionar todos os arquivos novos ou alterados de uma vez.
+    * **O que é:** Adiciona as novas alterações à área de preparação. No nosso caso, o comando foi `git add fluxo_README.md` para adicionar o arquivo que você editou.
 
 3.  **`git commit -m "Mensagem que descreve a alteração"`**
-    * **O que é:** Salva as novas alterações em um commit. Lembre-se de que ele só salva o que está na área de preparação.
+    * **O que é:** Salva as novas alterações em um commit. O comando usado foi `git commit -m "adicionando o arquivo fluxo a nova branch"`.
 
 4.  **`git push origin <nome_da_sua_branch>`**
     * **O que é:** Envia o novo commit (ou os novos commits) do seu computador para o GitHub. É crucial especificar o nome da branch, pois o `git push` envia o que está na sua branch atual para a branch correspondente no GitHub.
-    * **Como adicionar esta nova branch ao nosso GitHub?** Ao rodar o comando `git push origin <nome_da_sua_branch>` pela primeira vez, o Git automaticamente cria uma nova branch com esse nome no repositório remoto do GitHub.
+    * **Como adicionamos esta nova branch ao nosso GitHub?** Você usou o comando `git push origin feature/cria-fluxo-de-trabalho`. Ao rodar este comando pela primeira vez, o Git automaticamente cria uma nova branch com esse nome no repositório remoto do GitHub.
+
+---
+
+Agora você pode copiar este guia finalizado, colar no seu arquivo `fluxo_README.md` e salvar. Em seguida, use os comandos `git add`, `git commit` e `git push` para enviar esta última atualização para o GitHub e, finalmente, abrir o seu Pull Request.

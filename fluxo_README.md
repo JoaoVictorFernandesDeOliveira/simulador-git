@@ -29,6 +29,15 @@ Este arquivo serve como um guia para os principais comandos Git, desde a configu
 
 ---
 
+### Fluxo de Trabalho em Projetos Colaborativos (Entrando em um projeto)
+
+Quando você se junta a um projeto que já existe, como em uma empresa ou na faculdade, você não precisa criar um repositório do zero. O primeiro passo é clonar o projeto para o seu computador.
+
+1.  **`git clone <URL do Repositório>`**
+    * **O que é:** Copia todo o projeto de um repositório online (no GitHub, por exemplo) para uma pasta no seu computador. Este comando já cria a pasta do projeto e configura a conexão com o repositório remoto. Você precisa estar na pasta onde quer que o projeto seja baixado.
+
+Depois de clonar o projeto, o seu fluxo de trabalho diário (descrito abaixo) será o mesmo.
+
 ### Fluxo de Trabalho Diário (Atualizando o Projeto)
 
 Depois de configurar tudo, o fluxo para fazer uma nova alteração e enviá-la para o GitHub é o seguinte:

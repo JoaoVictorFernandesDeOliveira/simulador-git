@@ -48,6 +48,23 @@ Depois de clonar o projeto, o seu fluxo de trabalho diário (descrito abaixo) se
 
 Quando você criou sua branch `feature/cria-fluxo-de-trabalho`, o Git fez uma **cópia exata** de todos os arquivos que existiam na branch `master` no seu computador. Por isso, o `simulador_README.md` está presente lá. Sua nova branch é uma cópia perfeita do projeto até aquele momento, esta copia foi feita atraves do feature.
 
+### Como trocar de pra uma branch já criada ou pra uma nova ?
+
+1. Trocar para uma branch que já existe
+Use este comando quando a branch já foi criada por você ou por outra pessoa.
+
+Bash
+
+git switch nome-da-branch-existente
+
+2. Criar e trocar para uma branch nova
+Use este comando quando você quer criar uma branch do zero e já começar a trabalhar nela.
+
+Bash
+
+git switch -c nome-da-nova-branch
+
+
 ### Fluxo de Trabalho Diário (Atualizando o Projeto)
 
 Depois de configurar tudo, o fluxo para fazer uma nova alteração e enviá-la para o GitHub é o seguinte:

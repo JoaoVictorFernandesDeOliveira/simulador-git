@@ -48,7 +48,7 @@ Depois de clonar o projeto, o seu fluxo de trabalho diário (descrito abaixo) se
 
 Quando você criou sua branch `feature/cria-fluxo-de-trabalho`, o Git fez uma **cópia exata** de todos os arquivos que existiam na branch `master` no seu computador. Por isso, o `simulador_README.md` está presente lá. Sua nova branch é uma cópia perfeita do projeto até aquele momento, esta copia foi feita atraves do feature.
 
-### Como trocar de pra uma branch já criada ou pra uma nova ?
+### Como trocar pra  uma branch já criada ou pra uma nova ?
 
 1. Trocar para uma branch que já existe
 Use este comando quando a branch já foi criada por você ou por outra pessoa.
@@ -64,6 +64,16 @@ Bash
 
 git switch -c nome-da-nova-branch
 
+### Como conectar sua branch local com a sua branch do github ?
+
+1. git push -u origin [nome-da-sua-branch]
+Este comando é usado para enviar uma nova branch do seu repositório local para o repositório remoto (no GitHub, GitLab, etc.) pela primeira vez.
+
+2.Após usar este comando uma vez, você não precisará mais digitar a parte do -u ou o nome da branch. Da próxima vez que você quiser enviar suas alterações desta mesma branch, basta digitar o comando simples:
+
+Bash
+
+git push
 
 ### Fluxo de Trabalho Diário (Atualizando o Projeto)
 

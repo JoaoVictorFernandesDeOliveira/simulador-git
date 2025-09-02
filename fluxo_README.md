@@ -67,6 +67,7 @@ git switch -c nome-da-nova-branch
 ### Como conectar sua branch local com a sua branch do github ?
 
 1. git push -u origin [nome-da-sua-branch]
+
 Este comando é usado para enviar uma nova branch do seu repositório local para o repositório remoto (no GitHub, GitLab, etc.) pela primeira vez.
 
 2.Após usar este comando uma vez, você não precisará mais digitar a parte do -u ou o nome da branch. Da próxima vez que você quiser enviar suas alterações desta mesma branch, basta digitar o comando simples:
@@ -74,6 +75,13 @@ Este comando é usado para enviar uma nova branch do seu repositório local para
 Bash
 
 git push
+
+
+### Depois de conectar o seu branch local com o seu branch do github voce pode ver todos os commits realizados.
+
+Basta apenas utilizar o comando 
+
+git log
 
 ### Fluxo de Trabalho Diário (Atualizando o Projeto)
 
